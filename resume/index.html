@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniella Sam</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .tab {
+      width: 65px;
+      float: left;
+      padding: 5px 10px;
+      border: 2px solid black;
+      margin-top: -30.5px;
+      margin-right: -102px;
+      margin-left: 100px;
+    }
+    
+    .box {
+      width: 450px;
+      height: 300px;
+      border: 2px solid black;
+      margin-top: 120px;
+      margin-left: 100px;
+      padding: 20px;
+    }
+
+    h6 {
+      font-size: 15px;
+      font-weight: normal;
+    }
+  </style>
+  </style>
+         <script>
+            var dataku=['<h2>About</h2><br><h6>My name is Daniella Samantha Sumali, I prefer to be called Dani. I am in college majoring in Visual Communication Design, specializing in Graphic Design. <br> <br> I learn new things everyday, proactively seeking for new concepts. I am a person that could work alone as well in groups. Meeting new people, making connections, networking is something I would love to do in my daily life.</h6>', 
+            '<h2>Interest</h2><br><h6>I make time to have other activities as a daily routine, I have a deep appreciation for the sport Boxing. It is a sport that i adore, it has helped me to think more clearly everyday. Before I started boxing, I used to do cycling, basketball, tennis, and golf. But since the pandemic I started to cycle again, this time with my friends and family.<br> <br> Other than sports I love going out, whether it is going out shopping, eating out, or hanging out. The other spare time, I would normally watch a movie or finish a series I have been watching. </h6>', 
+            '<h2>Education</h2><br><h3>Santa Laurensia</h3><h6>Elementary to High School <br> (2006-2020)</h6></h6><br><br><h3>Universitas Pelita Harapan</h3><h6>Visual Communication Design in Graphic Design <br> (2020 to present)</h6>'
+            ];
+        </script>
+    </head>
+    <body>
+      <div id="tab_satu" class="tab" onclick="ubahwarna('rgb(255, 145, 20)', 'tab_satu', dataku[0])">About</div>
+      <div id="tab_dua" class="tab" onclick="ubahwarna('rgb(66, 153, 252)','tab_dua', dataku[1])">Interest</div>
+      <div id="tab_tiga" class="tab" onclick="ubahwarna('rgb(172, 250, 83)','tab_tiga', dataku[2])">Education</div>
+      <div id="dannii" class="box"></div>
+    </body>
+</html>
+<script>
+    function ubahwarna(x,y,z) {
+        document.querySelector('#dannii').style.backgroundColor = x;
+        document.querySelector('#dannii').innerHTML = z;
+        if (y == 'tab_satu') {
+            document.querySelector('#tab_satu').style.backgroundColor = 'rgb(255, 145, 20)';
+            document.querySelector('#tab_dua').style.backgroundColor = 'white';
+            document.querySelector('#tab_tiga').style.backgroundColor = 'white';
+        } else if (y == 'tab_dua'){
+            document.querySelector('#tab_satu').style.backgroundColor = 'white';
+            document.querySelector('#tab_dua').style.backgroundColor = 'rgb(66, 153, 252)';
+            document.querySelector('#tab_tiga').style.backgroundColor = 'white';
+        }
+        else {
+            document.querySelector('#tab_satu').style.backgroundColor = 'white';
+            document.querySelector('#tab_dua').style.backgroundColor = 'white';
+            document.querySelector('#tab_tiga').style.backgroundColor = 'rgb(172, 250, 83)';
+        }
+    }
+</script>
